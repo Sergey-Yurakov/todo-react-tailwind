@@ -1,14 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+
+import Layout from './components/Layout/Layout';
+import Todo from './components/Todo/Todo';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <Layout>
+      <Todo />
+    </Layout>
+  </React.StrictMode>,
 );
 
 // If you want to start measuring performance in your app, pass a function
